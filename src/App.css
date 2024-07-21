@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  box-sizing: border-box;
+  font-family:initial;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family:initial;
+  background-color: #031021;
+}
+
+.responsive-container {
+  width: 80%;
+  max-width: 1140px;
+}
+
+.heading {
+  color: #fffcfc;
+  font-size: 32px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin-top: 96px;
+  margin-bottom: 32px;
+
+}
+
+.contact-form-container {
+  display: flex;
+}
+
+@media screen and (max-width: 575px) {
+  .contact-form-container {
+    flex-direction: column;
+  }
+}
+
+.input {
+  color: #feffff;
+  font-family: 'Roboto';
+  border: 1px solid #d7dfe9;
+  border-radius: 2px;
+  width: 28%;
+  height: 48px;
+  padding-left: 16px;
+  margin-right: 15px;
+  outline: none;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  max-width: 320px;
+  background-color: #031021;
+}
+
+@media screen and (max-width: 575px) {
+  .input {
+    width: 280px;
+  }
+}
+
+.button {
+  background-color: #13303d;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .button {
+    width: 200px;
+  }
+}
+
+.contacts-table {
+  padding-left: 0;
+  margin-top: 48px;
+}
+
+.table-header {
+  display: flex;
+  background-color: #031021;
+  list-style-type: none;
+  border: 1px solid #cbd5e1;
+}
+
+.table-header-cell {
+  color: #f4f5f6;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 32px;
+}
+
+.name-column {
+  width: 33%;
+  border-right: none;
+}
+
+.separator {
+  margin: 0;
+  border: 1px solid #cbd5e1;
+}
+.error-message{
+  color: #cd0d0d;
+}
